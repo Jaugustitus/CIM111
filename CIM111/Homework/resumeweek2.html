@@ -8,14 +8,25 @@
 <meta name="author" content="Jeremy Augustitus">
 <meta name='keywords' content="resume, education, work">
 <meta name="description" content="this website is about me">
+<link rel="stylesheet" href="css/desktop.css">
 <style>
   body{
     font-family:sans-serif;
     background-color:green;
   }
-  Header{
+@media screen and (min-width: 960px){
+  body{
+    background-color: green;
+  }
+}
+@media screen and (max-width: 600px){
+  body{
+    background-color: orange;
+  }
+}
+  header{
     background-color: blue;
-    width:940px;
+    width: 940px;
     margin: 0 auto;
     padding: 10px;
     padding-top:10px;
@@ -23,6 +34,12 @@
     padding-left:10px;
     padding-right:10px;
 
+  }
+
+  main{
+    background-color: blue;
+    width: 940px;
+    margin: 0 auto;
   }
   h1 {
     color: pink;
@@ -32,6 +49,10 @@
     text-decoration: underline;
   }
 
+nav{
+  width:300px;
+  margin: 0 auto;
+}
   nav ul{
 
   }
@@ -39,6 +60,7 @@
   nav ul li{
     list-style:none;
     display: inline-block;
+    margin-right:20px;
   }
 
   nav ul li a{
@@ -59,7 +81,7 @@
   .greyOut{
     color:grey;
   }
-  Section{
+  section{
     margin-bottom:100px;
   }
   .work{
@@ -67,12 +89,19 @@
     width:400px;
     display:inline-block;
   }
+
+  a{
+    text-decoration: none;
+    color:red;
+  }
+
+  a:hover{
+
+  }
 </style>
 </head>
 
 <body>
-<section>
-  <div class="work">
   <header>
   <h1 id="centertext">Jeremy's Homework</h1>
     <nav>
@@ -81,15 +110,14 @@
         <li><a href="resume.html">resume</a></li>
       </ul>
     </nav>
-</div>
-</section>
   </header>
-  <Main>
+
+  <main>
     <h3 class="greyOut"> absolute</h3>
       <a href="http://www.google.com">Click here to go to google</a>
 
       <h3 class="greyOut"> relative link</h3>
-      <a href="index.html"> click her to go to google</a>
+      <a href="index.html"> click here to go to google</a>
       <img src="https://static.fctables.com/upload/zz/zzs12578de0617d997/premier-league-logo.png"width="200px">
       <img src="image/PremierLeague.png">
       <h2 class="greyOut"><b>Class Schedule</b></h2>
@@ -113,13 +141,14 @@
       <a href="https://github.com/Jaugustitus"> for more examples visit github.com/jeremyaugustitus</a>
     </aside>
     <article>
-<section>
 <div class="work">
-      <h1>what i like to do on the weekends!</h1>
-      <P>I like to hangout with my friends and do my work that I have for the week</p>
-        <a href=""><strong>read more</strong></a>
-</div>
-      </section>
+      <h1>Work skills and experience</h1>
+      <p>I have strong work ethic and understand the importance of collaboration and teamwork. I was the captain of the ice hockey team my senior year. I take an active role in my Fraternity, Kappa Sigma. I have done charity work in other countries and at home as well. I have fluent computer skills in Adobe InDesign, Adobe Photoshop, Microsoft word, Microsoft PowerPoint.</p><br>
+      <p>CADDY o GREENBROOK COUNTRY CLUB o MAY 2017- AUGUST 2017<br>As a caddy, I was tasked with the job of reading greens, carrying and caring for the clubs, and also was able to develop relationships while working for the members of the members of the club.</p><br>
+      <p>DELI WORKER o CALANDRAS ITALIAN VILLAGE o MAY 2017- AUGUST 2017<br>I would make food for customers, restock the fridges and clean the kitchen. On nights that I would close I would clean the deli area and restaurant space.</p><br>
+      <p>LANDSCAPER o HILLCREST FARMS o APRIL 2016- AUGUST 2016<br>I worked around the plant nursery and go to houses and do work there. At the nursery, I would do everything from water plants, to clean up the greenhouses, to ringing up customers. At customers house I would plant different things, do yard work, and turn on sprinkler systems</p><br>
+      <p>DELIVERY DRIVER o REZZA PIZZERIA o MAY 2015- AUGUST 2015<br>I would deliver food, clean up the kitchen and assemble pizza boxes</p><br>
+      <p>CONTRACTOR APPRENTICEo AUGUSTITUS PLUMBING AND HEATING o APRIL 2014- PRESENT<br>I work for my father's company when I need to or whenever he needs the help. I go to projects and help with whatever they need.</p><br>
 
 
     </article>
