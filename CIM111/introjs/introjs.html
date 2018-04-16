@@ -13,22 +13,51 @@
 </head>
 
 <body>
-  <div class="box" id="box1"></div>
-  <div class="box" id="box2">click here</div>
-  <div id="box2info"><p>this is box 2 stuff.</p></div>
+  <div id="heading"></div>
+  <div class="box" id="step1">step 1</div>
+  <div id="step1info"><img class="images" src="images/puttingonskis.jpg"width="200px"><p>start by putting on your skis</p></div>
+  <div class="box" id="step2">step 2</div>
+  <div id="step2info"><img class="images" src="images/skilift.jpg"width="200px"><p>start heading up the ski lift</p></div>
+  <div class="box" id="step3">step 3</div>
+  <div id="step3info"><img class="images" src="images/skidown.jpg"width="200px"><p>start skiing down the mountain</p></div>
+  <div class="box" id="step4">step 4</div>
+  <div id="step4info"><img class="images" src="images/skijump.jpg"width="200px"><p>go off the jump of your choosing</p></div>
+  <div class="box" id="step5">step 5</div>
+  <div id="step5info"><img class="images" src="images/skifall.jpg"width="200px"><img class="images" src="images/skitorn.jpg"width="200px"><p>land the jump but feel your knee explode</p></div>
+
 <script src="js/jquery-3.3.1.min.js"></script>
 <script>
 $(document).ready(function(){
 //all javescript goes there
-$("body").css("background-color","blue");
-$("#box1").html("<h1>Hello</h1>");
-$("#box2info").hide();
+// $("body").css("background-color","blue");
 
+ $("#heading").html("<h1>How to break your ACL</h1>");
+// $("#box2info").hide();
+$("#step1info").hide();
+$("#step1").click(function(){
+  $("#step1info").toggle();
+});
 
+$("#step2").click(function(){
+  $("#step2info").toggle();
+});
+
+$("#step3").click(function(){
+  $("#step3info").toggle();
+});
+
+$("#step4").click(function(){
+  $("#step4info").toggle();
+});
+
+$("#step5").click(function(){
+  $("#step5info").toggle();
+});
 
 });
-</script>
 
+
+</script>
 </body>
 
 </html>

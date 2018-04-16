@@ -1,0 +1,45 @@
+@import "devilsknights.css";
+
+.container{
+ width:100%;
+ margin:0 auto;
+ display: grid;
+ grid-template-rows:1fr auto 1fr;
+
+
+ grid-template-areas: "header" "main" "footer";
+
+
+ grid-template-columns:1fr;
+}
+
+main{
+ grid-area: main;
+ background-color: white;
+ display: block;
+ padding: 10px;
+ padding-top: 10px;
+ padding-bottom: 10px;
+ padding-right: 10px;
+ padding-left: 10px;
+}
+
+#col1{
+ background-color: red;
+ width: 100%;
+}
+
+.images{
+  width: 200px;
+  display: inline-block;
+}
+
+nav{
+ width: 250px;
+ margin: 0 auto;
+}
+nav ul li{
+ list-style:none;
+ display: block;
+ margin-right:20px;
+}
