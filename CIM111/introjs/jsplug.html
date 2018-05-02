@@ -1,1 +1,83 @@
 <!DOCTYPE html>
+<html>
+<head>
+<title>Visiting Amsterdam</title>
+<style>
+.box{
+  width:100px;
+  height:30px;
+  background-color:red;
+  margin-bottom:20px;
+}
+title{
+  color: white;
+}
+body{
+  background-color: black;
+
+}
+p{
+  color: white;
+}
+h1{
+  color:white;
+}
+
+</style>
+</head>
+
+<body>
+  <div id="heading"></div>
+  <div class="box" id="intro">Intro</div>
+  <div id="introinfo"><p><b>Amsterdam:</b> melting pot of cultures
+In short, it's no coincidence that Amsterdam has become one of the most multicultural city in the world. The city is now a melting pot of cultures, with residents from 180 different countries. It also embraces a variety of different lifestyles, religions and beliefs. For example, the city is considered by many to be the gay capital of Europe and still has an active squatters movement. It might seem contradictory to outsiders, but the city's enormous variety of residents works by allowing everyone to be who they are and say what they think.<br>
+<b>Politics</b><br>
+The Executive Board of Amsterdam is formed by the Mayor and six Aldermen. The mayor is appointed by the Crown (Royal family) for a period of six years – but extension is possible. The six Aldermen are elected by and from the municipal council.
+The municipal council is elected every four years by Amsterdam's residents. Even those with a foreign passport who’ve lived in the city for at least five years have the right to vote in these elections. Forty-five councillors form the municipal council, with the seats filled by representatives from various political parties.
+Amsterdam is known as a liberal city and often the more left-oriented parties hold the most political power. For example, the Social Democratic Party and Labour have dominated the Mayoral position for years.<br>
+<b>District councils</b><br>
+Some of the powers of the Amsterdam council have been transferred to a lower level - the district councils. There are 7 official districts in the city, each with their own executive and district council. This government – elected every four years by residents from the individual districts – was created to bring politics closer to the people. The roles district councils are most commonly involved in are those related to daily life, like providing passports, parking permits, roadworks and sanitation.</p>
+</div>
+  <div class="box" id="photogallery">Gallery</div>
+  <div id="photogalleryinfo"><img src="http://www.netherlands-tourism.com/wp-content/uploads/2014/11/Amsterdam.jpg"width="200"><img src="https://www.rai.nl/-/media/platform-content/your-trip/city/amsterdam-by-night_720x400.ashx"width="200"><img src="https://d49r1np2lhhxv.cloudfront.net/www/photos/KingslandFestivalAmsterdam2018_V1.jpg"width="200"><img src="http://www.hotelben.nl/bg/bg1.jpg"width="200"><img src="https://www.amsterdam-travel-guide.net/images/bulldog/coffeeshop-the-bulldog-nr-90-amsterdam-8.jpg"width="200"></div>
+  <div class="box" id="landmarks">Landmarks</div>
+  <div id="landmarkinfo"><p>Portuguese Synagogue</p><br><img src="https://i.pinimg.com/originals/ed/b4/30/edb430eaf9f7d83bd4028d33da2d1fe2.jpg"width="200"><a href="https://www.tripadvisor.com/Attraction_Review-g188590-d244481-Reviews-Portuguese_Synagogue-Amsterdam_North_Holland_Province.html">Portuguese Synagogue</a><br><p>3D Print Canal House<p><br><img src="http://www.artemisamsterdam.com/images/design-art/exhibitions/3d/24-140302_3dprintch_openingday01_h500.jpg"width="200"><a href="https://www.tripadvisor.com/Attraction_Review-g188590-d7148791-Reviews-3D_Print_Canal_House-Amsterdam_North_Holland_Province.html">3D Canal House</a>
+  <div class="box" id="resturants">Resturants</div>
+  <div id="resturantsinfo"><p>La Rive</p><br><img src="http://www.event1001.com/objectimages/15611/d5.gif"width="200"><a href="https://www.tripadvisor.com/Restaurant_Review-g188590-d696959-Reviews-La_Rive-Amsterdam_North_Holland_Province.html#photos;geo=188590&detail=696959&ff=280962293&albumViewMode=hero&aggregationId=101&albumid=101&baseMediaId=280962293&thumbnailMinWidth=50&cnt=30&offset=-1&filter=7&autoplay=">La Rive</a><br><p>Vinkeles</p><br><img src="https://qwh4j2ffvyb2fnl3l2zy1ca1-wpengine.netdna-ssl.com/wp-content/uploads/2016/01/Vinkeles-Restaurant.jpg"width="200"><a href="https://www.tripadvisor.com/Restaurant_Review-g188590-d1239229-Reviews-Vinkeles-Amsterdam_North_Holland_Province.html">Vinkles</a><br><p>De Silveren Spiegel</p>
+    <img src="https://img2.10bestmedia.com/Images/Photos/117933/p-de-silveren-spiegel-6620_54_990x660_201406011853.jpg"width="200"><a href="https://www.tripadvisor.com/Restaurant_Review-g188590-d693419-Reviews-De_Silveren_Spiegel-Amsterdam_North_Holland_Province.html">De Silveren Spiegel</a>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script>
+$(document).ready(function(){
+//all javescript goes there
+// $("body").css("background-color","blue");
+
+ $("#heading").html("<h1>Visiting Amsterdam</h1>");
+// $("#box2info").hide();
+$("#intro").click(function(){
+  $("#introinfo").toggle();
+});
+
+$("#photogallery").click(function(){
+  $("#photogalleryinfo").toggle();
+});
+
+$("#landmarks").click(function(){
+  $("#landmarksinfo").toggle();
+});
+
+$("#resturants").click(function(){
+  $("#resturantsinfo").toggle();
+});
+
+$("#step5").click(function(){
+  $("#step5info").toggle();
+});
+
+});
+
+
+</script>
+</body>
+
+</html>

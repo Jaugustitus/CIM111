@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Jeremy Augustitus Portfolio</title>
+<style>
+.box{
+  width:100px;
+  height:30px;
+  background-color:red;
+  margin-bottom:20px;
+}
+title{
+  color: white;
+}
+body{
+  background-color: black;
+
+}
+p{
+  color: white;
+}
+h1{
+  color:white;
+}
+
+</style>
+</head>
+
+<body>
+  <div id="heading"></div>
+  <div class="box" id="intro">Intro</div>
+  <div id="introinfo"><p><b>About Me<b><br> My name is Jeremy Augustitus. I am currently a sophomore enrolled at the Univeristy of Miami. I am twenty years old and I have one older brother named Aron. He is twenty-two and just graduated from Michigan State University.<br>
+<b>Life</b><br>
+I grew up in North Caldwell, a small town in Northern New Jersey about 20-30 minutes from New York City. Growing up I played a variety of sports, like most kids, but the two sports I stuck with, until i graduated, were ice hockey and skiing. I started skating when I was three years old and started skiing around the age of five. I played competive hockey until my senior year of high school and now I play in mens leauges. I still ski as much as I can. Currently I am a Public Relations major at the University of Miami. I would like to work in the music, fashion, or sports industry. Starting the first semester of my junior year, I will be studying abroad in Rome,Italy.<br>
+<b>Website</b><br>
+The purpose of this webiste is that it is a portfolio of some of the work that I have done throughout my time in college. The website will contain my resume, work from my web design class, and then two projects from my graphic design classes</p>
+</div>
+  <div class="box" id="resume">Resume</div>
+  <div id="resumeinfo"><p>This is my resume, the link will bring you to a page with all of my work experience.</p></div>
+  <div class="box" id="website">Website</div>
+  <div id="websiteinfo"><p>The website that this link will bring you to is one of my favorite project. I was able to make a fan page for my favorite hockey team, the New Jersey Devils, and I got to make one for the Vegas Golden Knights</p><br>
+  <div class="box" id="travelposter">Travel Poster</div>
+  <div id="travelposterinfo"></div>
+  <div id="box" id="magazine">
+  <div id="magazineinfo"></div>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script>
+$(document).ready(function(){
+//all javescript goes there
+// $("body").css("background-color","blue");
+
+ $("#heading").html("<h1>Jeremy Augustitus Portfolio</h1>");
+// $("#box2info").hide();
+$("#intro").click(function(){
+  $("#introinfo").toggle();
+});
+
+$("#resume").click(function(){
+  $("#resumeinfo").toggle();
+});
+
+$("#website").click(function(){
+  $("#websiteinfo").toggle();
+});
+
+$("#travelposter").click(function(){
+  $("#travelposterinfo").toggle();
+});
+
+$("#magazine").click(function(){
+  $("#magazineinfo").toggle();
+});
+
+});
+
+
+</script>
+</body>
+
+</html>
