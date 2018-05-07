@@ -4,26 +4,27 @@
 <title>Jeremy Augustitus Portfolio</title>
 <style>
 .box{
-  width:100px;
+  width:150px;
   height:30px;
-  background-color:red;
+  background-color:salmon;
   margin-bottom:20px;
 }
 title{
-  color: white;
+  color: black;
 }
 body{
-  background-color: black;
+  background-color: skyblue;
 
 }
 p{
-  color: white;
+  color: black;
 }
 h1{
-  color:white;
+  color:black;
 }
 
 </style>
+<h1>Jeremy Augustitus Portfolio</h1>
 </head>
 
 <body>
@@ -33,18 +34,20 @@ h1{
 <b>Life</b><br>
 I grew up in North Caldwell, a small town in Northern New Jersey about 20-30 minutes from New York City. Growing up I played a variety of sports, like most kids, but the two sports I stuck with, until i graduated, were ice hockey and skiing. I started skating when I was three years old and started skiing around the age of five. I played competive hockey until my senior year of high school and now I play in mens leauges. I still ski as much as I can. Currently I am a Public Relations major at the University of Miami. I would like to work in the music, fashion, or sports industry. Starting the first semester of my junior year, I will be studying abroad in Rome,Italy.<br>
 <b>Website</b><br>
-The purpose of this webiste is that it is a portfolio of some of the work that I have done throughout my time in college. The website will contain my resume, work from my web design class, and then two projects from my graphic design classes</p>
+The purpose of this website is that it is a portfolio of some of the work that I have done throughout my time in college. The website will contain my resume, work from my web design class, and then two projects from my graphic design classes</p>
 </div>
   <div class="box" id="resume">Resume</div>
-  <div id="resumeinfo"><p>This is my resume, the link will bring you to a page with all of my work experience.</p></div>
+  <div id="resumeinfo"><p>This is my resume, the link will bring you to a page with all of my work experience.</p><a href="sitetwo.html">resume</a></div>
   <div class="box" id="website">Website</div>
-  <div id="websiteinfo"><p>The website that this link will bring you to is one of my favorite project. I was able to make a fan page for my favorite hockey team, the New Jersey Devils, and I got to make one for the Vegas Golden Knights</p><br>
-  <div class="box" id="travelposter">Travel Poster</div>
-  <div id="travelposterinfo"></div>
-  <div id="box" id="magazine">
-  <div id="magazineinfo"></div>
+  <div id="websiteinfo"><p>The website that this link will bring you to is one of my favorite project. I was able to make a fan page for my favorite hockey team, the New Jersey Devils, and I got to make one for the Vegas Golden Knights.</p><br><a href="file:///Users/jeremyaugustitus/Documents/CIM111/CIM111/CIM111/final/sitefive.html">Website portfolio</a>
+  <div class="box" id="sportsprcampaign">Sports Campaign</div>
+  <div id="sportsprcampaigninfo"><p>For my Sports Public Relations class the main project for the year was making a sports campaign. My group was tasked with making a sports campaign for Brady Singer. The campaign was for Brady Singer's chance to win the Dick Howser Trophy. The Dick Hoswer Trophy is for the best player in college baseball, it is the equivilant of the Heisman Trophy in college football.</p><a href="sitethree.html">Brady Campaign</a></div>
+  <div class="box" id="magazine">Magazine</div>
+  <div id="magazineinfo"><p>For my graphic design project we had two project to do over the course of the semester. This was the second project of the semester that we were tasked with doing. For this project we were tasked with making a magazine of any kind. I chose to make a magazine based off of GQ. This was probably the most fun project I have every had to do.</p><a href="sitefour.html">GQ Magazine</a></div>
 
 <script src="js/jquery-3.3.1.min.js"></script>
+<link rel="stylesheet" href="/fancybox/source/jquery.fancybox.css?v=2.1.7" type="text/css" media="screen" />
+<script type="text/javascript" src="/fancybox/source/jquery.fancybox.pack.js?v=2.1.7"></script>
 <script>
 $(document).ready(function(){
 //all javescript goes there
@@ -64,8 +67,8 @@ $("#website").click(function(){
   $("#websiteinfo").toggle();
 });
 
-$("#travelposter").click(function(){
-  $("#travelposterinfo").toggle();
+$("#sportsprcampaign").click(function(){
+  $("#sportsprcampaigninfo").toggle();
 });
 
 $("#magazine").click(function(){
